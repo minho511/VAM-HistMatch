@@ -57,8 +57,16 @@ To apply the value histogram alignment transform, simply modify the dataset tran
 
         return transform
 ```
+### Results
+
+---
+![original](./assests/Figure_1.png)
+![value aligned](./assests/Figure_2.png)
+
 
 ### Additional Remarks
+
+---
 
 1. Performance in the original domain may slightly decrease
 
