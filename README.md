@@ -1,9 +1,9 @@
 # VAM-HistMatch
 Official PyTorch implementation of Value Histogram Matching module (VAM) proposed in 
 
-| Cross-Domain Person Re-Identification Using Value Distribution Alignment
-Minho Kim, Yeejin Lee
-ICCAS 2023
+> Cross-Domain Person Re-Identification Using Value Distribution Alignment  
+> Minho Kim, Yeejin Lee  
+> ICCAS 2023  
 
 [Paper (IEEE Xplore)](https://ieeexplore.ieee.org/document/10316745)
 
@@ -16,7 +16,7 @@ While this version is significantly easier to integrate and apply in existing Py
 
 Cross-domain person re-identification often suffers from significant performance degradation due to domain gaps especially illumination differences.
 
-| "What if we transform the brightness of all input images during both training and testing to follow a common reference distribution? Would the model then become more robust to illumination variation?"
+> "What if we transform the brightness of all input images during both training and testing to follow a common reference distribution? Would the model then become more robust to illumination variation?"
 
 -> My approach: Align the value (brightness) distribution of HSV images to a reference Gaussian distribution using histogram matching.
 
@@ -61,10 +61,9 @@ To apply the value histogram alignment transform, simply modify the dataset tran
 ### Additional Remarks
 
 1. Performance in the original domain may slightly decrease
-Since this method transforms the brightness distribution of all input images, it may slightly harm performance when training and testing within the same domain.  
-However, it significantly improves generalization to new domains with unseen illumination conditions making it ideal for cross-domain person re-identification.
+
+    Since this method transforms the brightness distribution of all input images, it may slightly harm performance when training and testing within the same domain. However, it significantly improves generalization to new domains with unseen illumination conditions making it ideal for cross-domain person re-identification.
 
 2. Potential for broader applicability
 
-While this method is designed for cross-domain person re-ID, its core principle (aligning brightness distributions) is general.  
-We expect it could also be beneficial for other vision tasks where illumination variation is a major challenge.
+    While this method is designed for cross-domain person re-ID, its core principle (aligning brightness distributions) is general. We expect it could also be beneficial for other vision tasks where illumination variation is a major challenge.
