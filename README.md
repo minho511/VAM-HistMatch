@@ -60,7 +60,10 @@ To apply the value histogram alignment transform, simply modify the dataset tran
 ### Results
 
 ---
-![original](./assests/Figure_1.png)
+<p align="center">
+<img height=200 src="./assests/Figure_1.png">
+</p>
+
 ![value aligned](./assests/Figure_2.png)
 
 
